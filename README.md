@@ -1,6 +1,6 @@
 # AWEBSFinalProyect
 
-First run the command\n
+First run the command<br>
 npm install
 
 Make sure to have firebase tools install\n
