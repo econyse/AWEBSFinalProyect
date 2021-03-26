@@ -46,6 +46,7 @@ build/Release
 
 # Dependency directories
 node_modules/
+Server/firebase/config.js
 
 # Optional npm cache directory
 .npm

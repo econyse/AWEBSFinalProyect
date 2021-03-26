@@ -19,20 +19,20 @@ router.use(function timeLog(req, res, next) {
 })
 // define the home page route
 router.get('/', function (req, res) {
-    res.sendFile(path.resolve('Public/index.html'));
+    res.sendFile(path.join(__dirname, '/Public/index.html'));
 })
 
 router.get('/:uid/home', function (req, res) {
-    res.sendFile(path.resolve('Public/home.html'))
+    res.sendFile(path.join(__dirname, '/Public/home.html'))
 })
 
 router.route('/register')
     .get(function (req, res) {
-        res.sendFile(path.resolve('Public/register.html'));
+        res.sendFile(path.join(__dirname, '/Public/register.html'));
     })
 
 router.get('/logout', function (req, res) {
-    res.sendFile(path.resolve('Public/logout.html'));
+    res.sendFile(path.join(__dirname, '/Public/logout.html'));
 })
 
 module.exports = router

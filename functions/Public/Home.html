@@ -8,21 +8,19 @@
 
     <!-- CSS  -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
-    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="/css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
 </head>
 
 <body>
     <nav class="light-blue lighten-1" role="navigation">
         <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">Logo</a>
             <ul class="right hide-on-med-and-down">
-                <li><a href="/">Log in</a></li>
-                <li><a href="/register">Register</a></li>
+                <li><a href="/logout">Log Out</a></li>
             </ul>
 
             <ul id="nav-mobile" class="sidenav">
-                <li><a href="/">Log in</a></li>
-                <li><a href="/register">Register</a></li>
+                <li><a href="/logout">Log Out</a></li>
             </ul>
             <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
         </div>
@@ -32,46 +30,7 @@
             <br><br>
             <h1 class="header center orange-text">Welcome!</h1>
             <div class="row center">
-                <div class="col s12 m6 offset-m3">
-                    <div class="card blue-grey darken-1">
-                        <form action="/register" method="POST">
-                            <div class="card-content white-text">
-                                <span class="card-title">Log in</span>
-                                <div class="input-field">
-                                    <i class="material-icons prefix">perm_contact_calendar</i>
-                                    <input id="name" name="name" type="text" class="validate">
-                                    <label for="name">Name</label>
-                                </div>
-                                <div class="input-field">
-                                    <i class="material-icons prefix">event</i>
-                                    <input id="bdate" name="bdate" type="text" class="datepicker">
-                                    <label for="bdate">Birthdate</label>
-                                </div>
-                                <div class="input-field">
-                                    <i class="material-icons prefix">account_circle</i>
-                                    <input id="user" name="user" type="email" class="validate">
-                                    <label for="user">User</label>
-                                </div>
-                                <div class="input-field">
-                                    <i class="material-icons prefix">password</i>
-                                    <input id="password" name="password" type="password" class="validate">
-                                    <label for="password">Password</label>
-                                </div>
-                                <div class="input-field">
-                                    <i class="material-icons prefix">password</i>
-                                    <input id="cpass" name="cpass" type="password" class="validate">
-                                    <label for="cpass">Confirm Password</label>
-                                </div>
-                            </div>
-                            <div class="card-action">
-                                <a href="/register">Register</a>
-                                <button class="btn waves-effect waves-light" type="submit">Enter
-                                    <i class="material-icons right">send</i>
-                                </button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
+                <h1>Home</h1>
             </div>
 
             <br><br>
@@ -168,9 +127,9 @@
     <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-firestore.js"></script>
     <!--  Scripts-->
     <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script src="js/materialize.js"></script>
-    <script src="js/init.js"></script>
-    <script src="js/userAuth.js"></script>
+    <script src="/js/materialize.js"></script>
+    <script src="/js/init.js"></script>
+    <script src="/js/userAuth.js"></script>
 
 </body>
 
